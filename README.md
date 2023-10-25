@@ -8,3 +8,5 @@ Display blog posts from [jsonplaceholder](https://jsonplaceholder.typicode.com) 
 - Fetch initial posts from API and display
 - Scroll down, show loader and fetch next set of posts
 - Add filtering for fetched posts
+
+![img_20231025](https://github.com/imranshkh283/Infinite-Blog-Scroll/assets/14871076/eee58433-ad2d-4639-b9f4-a6691df238d9)
