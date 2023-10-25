@@ -33,3 +33,26 @@ const showPosts = async () => {
 }
 
 showPosts();
+
+const showLoading = () => {
+    loading.classList.add('show');
+
+    setTimeout(() => {
+        loading.classList.remove('show');
+        setTimeout(() => {
+            page++;
+            showPosts();
+        }, 300);
+    }, 1000);
+
+}
+
+window.addEventListener('scroll', () => {
+    const { scrollTop, scrollHeight, clientHeight } = document.documentElement || document.body;
+    console.log('-----');
+    console.log(scrollHeight - scrollTop);
+    console.log(clientHeight);
+    if (scrollTop + clientHeight >= scrollHeight - 1) {
+        showLoading();
+    }
+});
